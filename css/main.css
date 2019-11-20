@@ -209,6 +209,36 @@ a {
 	font-family: 'Bell MT', serif;
 	font-size: 20px;
 }
+
+#contactForm {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+#contactForm input, textarea {
+	padding: 7px 10px;
+	border: #e65b25 solid 1px;
+	margin-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#contactForm input:last-child {
+	padding: 15px;
+	background-color: #e65b25;
+	border: none;
+	color: white;
+	font-size: 18px;
+	transition: 1s ease all;
+}
+
+#contactForm input:last-child:hover {
+	background-color: #383737;
+	cursor: pointer;
+}
+
 #contact ul {
 	margin-top: 40px;
 }
