@@ -138,6 +138,13 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top:20px;
+}
+
+.productR {
+	background-color: #efefef;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .product img {
@@ -149,22 +156,31 @@ a {
 	margin-left: auto;
 }
 
+.productText {
+	text-align: center;
+}
+
+.productTextR {
+	text-align: center;
+}
+
 .product h3 {
 	padding: 15px;
+	margin-top: 20px;
 }
 
 .product p {
-	padding: 25px;
-	border-bottom: 1px solid #999;
+	padding: 25px 40px;;
+	/* border-bottom: 1px solid #999; */
 	line-height: 20px;
 }
 
-.product3 p:last-child {
+/* .product3 p:last-child {
 	border: none;
-}
+} */
 
 #about {
-	margin-top: 20px;
+	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
 	background-color: #ccc;
@@ -223,6 +239,12 @@ a {
 	text-align: center;
 }
 
+@media screen and (min-width: 576px) {
+	.product p {
+		padding: 25px 100px;
+	}
+}
+
 /* TABLET VERSION */
 @media screen and (min-width: 768px) {
 	h1 {
@@ -256,8 +278,8 @@ a {
 	}
 
 	.product p {
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-left: 150px;
+		padding-right: 150px;
 	}
 
 	#about p {
@@ -278,6 +300,12 @@ a {
 
 	#contact ul li p {
 		padding-top: 10px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.product p {
+		padding: 25px 200px;
 	}
 }
 
@@ -327,7 +355,7 @@ a {
 		animation-fill-mode: backwards;
 	}
 
-	#productsCon {
+	/* #productsCon {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 20px;
@@ -344,10 +372,45 @@ a {
 
 	.product3 {
 		grid-column: 3;
+	} */
+
+	#products h1 {
+		margin-top: 20px;;
+	}
+
+	.product {
+		display: flex;
+		flex-direction: row;
+		padding: 20px;
+		margin-top: 40px;
+		margin-right: 20px;
+		margin-left: 20px;;
+	}
+
+	.product img {
+		margin-top: 0;
+	}
+
+	.productR img {
+		order: 3;
+	}
+
+	.productR {
+		background-color: #efefef;
+		margin-top: 40px;
+	}
+
+	.productText {
+		margin-left: 40px;
+	}
+
+	.productTextR {
+		text-align: right;
+		margin-right: 40px;
 	}
 
 	.product h3 {
-		text-align: left !important;
+		/* text-align: left !important; */
 		padding: 0;
 		padding-top: 20px;
 		padding-bottom: 10px;
@@ -360,6 +423,7 @@ a {
 
 	#about {
 		padding: 80px 50px;
+		margin-top: 40px;
 	}
 
 }
