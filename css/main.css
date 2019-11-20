@@ -324,6 +324,10 @@ a {
 		padding-right: 80px;
 	}
 
+	#contactForm {
+		width: 80%;
+	}
+
 	.contactIcon {
 		max-width: 40px;
 	}
@@ -454,6 +458,14 @@ a {
 	#about {
 		padding: 80px 50px;
 		margin-top: 40px;
+	}
+
+	#contactText {
+		padding: 0 300px;
+	}
+
+	#contactForm {
+		width: 50%;
 	}
 
 }
