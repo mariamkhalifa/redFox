@@ -4,14 +4,23 @@ let burgerMenu = document.querySelector('#burgerMenu'),
 	burgerBtn = document.querySelector('.hamburger'),
 	downBtn = document.querySelector('.downArrow'),
 	mediaQuery1 = window.matchMedia('(min-width: 1024px)'),
-	mediaQuery2 = window.matchMedia('(min-width: 768px)'),
+	mediaQuery2 = window.matchMedia('(min-width: 767px)'),
 	productsLink = document.querySelector('#productsLink'),
 	aboutLink = document.querySelector('#aboutLink'),
-	contactLink = document.querySelector('#contactLink');
+	contactLink = document.querySelector('#contactLink'),
+	scrollTop = document.querySelector('#scrollTop');
 
-console.log(productsLink);
-console.log(aboutLink);
-console.log(contactLink);
+let waypoint = new Waypoint({
+		element: document.getElementById('products'),
+		handler: function(direction) {
+		  console.log('Scrolled to waypoint!')
+		  scrollTop.style.opacity = "1";
+		}
+	  })
+
+// console.log(productsLink);
+// console.log(aboutLink);
+// console.log(contactLink);
 
 function toggleMenu(){
 	burgerMenu.classList.toggle('slideToggle');
@@ -46,23 +55,41 @@ function scrollToProducts(e){
 
 function scrollToAbout(e){
 	e.preventDefault;
-	e.preventDefault;
 	if (mediaQuery1.matches) {
-		TweenLite.to(window, 1, {scrollTo:{y:1540}});
+		TweenLite.to(window, 1, {scrollTo:{y:1800}});
 	}
 	else if (mediaQuery2.matches) {
-		TweenLite.to(window, 1, {scrollTo:{y:2800}});
+		TweenLite.to(window, 1, {scrollTo:{y:2700}});
 	}
 	else {
-		TweenLite.to(window, 1, {scrollTo:{y:2500}})
+		TweenLite.to(window, 1, {scrollTo:{y:2800}})
 	}
+}
+
+function scrollToContact(e){
+	e.preventDefault;
+	if (mediaQuery1.matches) {
+		TweenLite.to(window, 1, {scrollTo:{y:2200}});
+	}
+	else if (mediaQuery2.matches) {
+		console.log('yes');
+		TweenLite.to(window, 1, {scrollTo:{y:3900}});
+	}
+	else {
+		TweenLite.to(window, 1, {scrollTo:{y:3100}})
+	}
+}
+
+function scrollToTop() {
+	TweenLite.to(window, 1, {scrollTo:{y:0}});
 }
 
 burgerBtn.addEventListener('click', toggleMenu);
 downBtn.addEventListener('click', scrollDown);
 productsLink.addEventListener('click', scrollToProducts);
 aboutLink.addEventListener('click', scrollToAbout);
-contactLink.addEventListener('click', scrollToAbout);
+contactLink.addEventListener('click', scrollToContact);
+scrollTop.addEventListener('click', scrollToTop);
 
 
 
