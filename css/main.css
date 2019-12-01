@@ -261,15 +261,15 @@ a {
 
 #scrollTop {
 	opacity: 0;
+	cursor: pointer;
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	padding: 10px;
 	transition: all .5s ease;
 }
 
 #scrollTop i {
-	position: fixed;
-	cursor: pointer;
-	bottom: 30px;
-	right: 20px;
-	padding: 10px;
 	color: #383737;
 	font-size: 100px;
 	text-shadow: 1px 4px 5px rgba(0,0,0,.3);
