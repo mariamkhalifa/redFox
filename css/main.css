@@ -287,6 +287,13 @@ a {
 	text-align: center;
 }
 
+.submission {
+	border: solid 2px #e65b25;
+	padding: 20px;
+	margin: 40px;
+	text-align: center;
+}
+
 @media screen and (min-width: 576px) {
 	.product p {
 		padding: 25px 100px;
