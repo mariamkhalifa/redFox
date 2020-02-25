@@ -8,7 +8,9 @@ let burgerMenu = document.querySelector('#burgerMenu'),
 	productsLink = document.querySelector('#productsLink'),
 	aboutLink = document.querySelector('#aboutLink'),
 	contactLink = document.querySelector('#contactLink'),
-	scrollTop = document.querySelector('#scrollTop');
+	scrollTop = document.querySelector('#scrollTop'),
+	productReveal = document.querySelector('.productReveal'),
+	protectiveCon = document.querySelector('.protect-show');
 
 let waypoint = new Waypoint({
 		element: document.getElementById('products'),
@@ -84,13 +86,20 @@ function scrollToTop() {
 	TweenLite.to(window, 1, {scrollTo:{y:0}});
 }
 
+function revealProtective() {
+	console.log('revealed');
+	protectiveCon.classList.toggle('revealed');
+	productReveal.classList.toggle('rotated');
+	//TweenLite.to('.productReveal', {rotation:180, duration:.5});
+}
+
 burgerBtn.addEventListener('click', toggleMenu);
 downBtn.addEventListener('click', scrollDown);
 productsLink.addEventListener('click', scrollToProducts);
 aboutLink.addEventListener('click', scrollToAbout);
 contactLink.addEventListener('click', scrollToContact);
 scrollTop.addEventListener('click', scrollToTop);
-
+productReveal.addEventListener('click', revealProtective);
 
 
 })();
