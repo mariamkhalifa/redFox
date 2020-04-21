@@ -66,6 +66,145 @@
 						<p>A multilayered adhesive mat that captures dust and undesired particles off shoes and wheeled equipment before entering the controlled environment. Offered in a standard 30 layered mat, each layer is easily peeled off revealing a new clean polyethylene film ready for traffic.  Manufactured at one of the best factories in China, offering great quality satisfying Canadian standards at a substantially lower cost.</p>
 					</div>
 				</section>
+				<section class="product productR product4">
+					<img src="images/surgical-cap.jpg" alt="Surgeon's Cap" class="productImg protectiveImg">
+					<div class="productText">
+						<h3>Human Protective Equipment</h3>
+						<p>Click here to view our human protective equipment.</p>
+						<i class="fa fa-angle-down fa-4x productReveal"></i>
+					</div>
+				</section>
+				<div class="protect-show">
+					<div class="protect-wrapper">
+						<img src="images/3ply-surgical-mask.jpg" alt="surgical mask 3-ply">
+						<h4>Surgical Mask 3-Ply</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.10</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/surgical-cap-easy-tie.jpg" alt="surgical cap easy tie">
+						<h4>Surgical Cap with Easy Tie</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.10</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/surgical-cap-elastic.jpg" alt="surgical cap ealstic band">
+						<h4>Surgical Cap with Elastic Band</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.10</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/mesh-hairnet.jpg" alt="mesh hairnt">
+						<h4>Mesh Hairnet</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.11</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/double-elastic-mop-cap.jpg" alt="mop cap">
+						<h4>Mop Cap (Double Elastic)</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.045</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/non-woven-beard-cover.jpg" alt="non woven beard cover">
+						<h4>Non-Woven Beard Cover</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.051</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/bouffant-round-cap.jpg" alt="bouffant round cap">
+						<h4>Bouffant Round Cap</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.051</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/skid-proof-shoes-cover.jpg" alt="skid proof shoes cover">
+						<h4>Skid-Proof Shoe Cover</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.10</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/non-woven-shoes-cover.jpg" alt="non-woven shoes cover">
+						<h4>Non-woven Shoe Cover</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.063</p> -->
+					</div>
+
+					<div class="protect-wrapper">
+						<img src="images/esd-shoes-cover.jpg" alt="ESD shoes cover">
+						<h4>ESD Shoe Cover</h4>
+						<!-- <ul class="specs">
+							<h5>Specs:</h5>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul> -->
+						<!-- <p>Price: $0.18</p> -->
+					</div>
+				</div>
 			</div>
 		</section>
 
