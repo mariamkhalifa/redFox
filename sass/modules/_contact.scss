@@ -72,11 +72,8 @@
 	margin-left: 15px;
 }
 
-.submission {
-	border: solid 2px $orange;
-	padding: 20px;
-	margin: 40px;
-	text-align: center;
+.formMsg {
+	color: $orange;
 }
 
 @media screen and (min-width: 1024px) {

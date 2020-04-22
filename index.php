@@ -181,6 +181,7 @@
 			<h2 class="mainHeading">Contact Us</h2>
 			<p id="contactText">We are always available to answer all your inquiries. Feel free to use this form or email us.</p>
 			<form id="contactForm" action="contact/data_contact.php" method="POST">
+				<p class="formMsg"></p>
 				<label for="u-name">Name</label>
 				<input id="u-name" type="text" name="name" placeholder="name.." required>
 				<label for="u-email">Email</label>
@@ -189,7 +190,7 @@
 				<input id="u-subject" type="text" name="subject" placeholder="subject.." required>
 				<label for="u-message">Message</label>
 				<textarea id="u-message" name="message" placeholder="message.." required></textarea>
-				<input type="submit" value="Submit">
+				<input id="submit" type="submit" value="Submit">
 			</form>
 			<ul>
 				<li>
