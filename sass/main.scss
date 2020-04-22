@@ -1,0 +1,38 @@
+@import '_vars';
+@import 'modules/_reset';
+
+body {
+	font-family: $copy-font;
+    color: $copy-color;
+    font-size: $p-regular;
+    font-weight: 300;
+}
+
+h1, h2, h3 {
+	font-family: $heading-font;
+}
+
+a {
+	text-decoration: none;
+}
+
+.mainHeading {
+    font-size: $h1;
+}
+
+@keyframes slideDownAnim {
+	0% {
+		opacity: 0;
+		@include slideDown;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@import 'modules/_header';
+@import 'modules/_hero';
+@import 'modules/_products';
+@import 'modules/_about';
+@import 'modules/_contact';
+@import 'modules/_footer';

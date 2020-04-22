@@ -1,0 +1,48 @@
+#hero {
+	display: flex;
+	flex-direction: column;
+	background: url(../images/hero-small.jpg) no-repeat;
+	height: 410px;
+	align-items: center;
+}
+
+.introMsg {
+	color: white;
+	text-align: center;
+    margin-top: 160px;
+	max-width: 300px;
+    text-shadow: 3px 2px 5px rgba(0,0,0,.3);
+    font-size: $h1;
+    font-family: $heading-font;
+}
+
+.downArrow {
+	color: white;
+    margin-top: 5%;
+    text-shadow: 1px 2px 5px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+	#hero {
+		background: url(../images/hero.jpg);
+		max-width: 1366px;
+		height: 582px;
+	}
+}
+
+@media screen and (min-width:900px) {
+	.introMsg, .downArrow {
+		animation: slideDownAnim 1s;
+		animation-fill-mode: backwards;
+	}
+
+	.introMsg {
+		animation-delay: 1s;
+		margin-top: 200px;
+	}
+
+	.downArrow {
+		animation-delay: 1.5s;
+	}
+}

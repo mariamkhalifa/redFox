@@ -1,0 +1,104 @@
+#mainHeader {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburger {
+	color: $copy-color;
+    transition: all .2s ease;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.hamburger:hover, .hamburger:focus {
+    @include scaleDown;
+    opacity: .9;
+}
+
+.hamburger.expanded {
+	@include rotate90;
+}
+
+#burgerMenu {
+	display: none;
+}
+
+#burgerMenu.slideToggle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	li {
+		padding: 10px 50px;
+		border-bottom: 1px solid $bg-color;
+		text-align: center;	
+	}
+	a { 
+		color: $light-grey;
+		font-size: $p-small;
+		transition: all .5s ease;
+	}
+	li:first-child {
+		margin-top: 40px;
+	}
+	li:last-of-type a {
+		border-bottom: none;
+	}
+	a:hover {
+		opacity: .7;
+	}
+}
+
+#logo {
+	width: 70%;
+	max-width: 350px;
+	margin-top: 60px;
+}
+
+@media screen and (min-width: 900px) {
+	#mainHeader {
+		flex-direction: row;
+		justify-content: space-between;
+		animation: slideDownAnim 1s;
+	}
+	#logo {
+		order: -1;
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+
+	#mainNav i {
+		display: none;
+	}
+
+	#burgerMenu {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#burgerMenu {
+		li {
+		margin: 0;
+		padding: 0;
+		border: none;
+		position: static;
+		margin-right: 20px;
+		padding-right: 20px;
+		border-right: solid 1px $bg-color;
+		}
+		li:last-child {
+			padding: 0;
+			margin-right: 40px;
+			border: none !important;
+		}
+		a {
+			color: $copy-color;
+			transition: all .5s ease;
+		}
+		a:hover, a:focus {
+			opacity: .7;
+		}
+	}
+}
