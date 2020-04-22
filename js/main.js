@@ -10,7 +10,11 @@ let burgerMenu = document.querySelector('#burgerMenu'),
 	//contactLink = document.querySelector('#contactLink'),
 	scrollTop = document.querySelector('#scrollTop'),
 	productReveal = document.querySelector('.productReveal'),
-	protectiveCon = document.querySelector('.protect-show');
+	protectiveCon = document.querySelector('.protect-show'),
+	form = document.querySelector('#contactForm'),
+	formMsg = document.querySelector('.formMsg'),
+	submitContact = document.querySelector('#submit');
+
 
 let waypoint = new Waypoint({
 		element: document.getElementById('products'),
@@ -81,6 +85,40 @@ function revealProtective() {
 	//TweenLite.to('.productReveal', {rotation:180, duration:.5});
 }
 
+function handleMail(e) {
+	e.preventDefault();
+
+	let formdata = new FormData(form),
+		maildata = {};
+
+	for (let [key,value] of formdata.entries()) {
+		maildata[key] = value;
+	}
+
+	if (maildata.name !== "" && maildata.email !== "" && maildata.subject !== "" && maildata.message !== "" ) {
+		let url = './contact/data_contact.php';
+
+		fetch(url, {
+			method: 'POST',
+			headers: {
+				'Accept': 'application/json, text/plain, */*',
+				'Content-type': 'application/json'
+			},
+			body: JSON.stringify(maildata)
+		})
+		.then(res => res.json())
+		.then(data => {
+			console.log(data);
+			formMsg.textContent = data;
+		})
+		.catch(err => console.log(err));
+	} else {
+		formMsg.textContent = 'Please fill out the required fields!'
+	}
+
+	
+}
+
 burgerBtn.addEventListener('click', toggleMenu);
 downBtn.addEventListener('click', scrollDown);
 //productsLink.addEventListener('click', scrollToProducts);
@@ -88,6 +126,7 @@ downBtn.addEventListener('click', scrollDown);
 //contactLink.addEventListener('click', scrollToContact);
 scrollTop.addEventListener('click', scrollToTop);
 productReveal.addEventListener('click', revealProtective);
+submitContact.addEventListener('click', handleMail);
 
 
 })();
