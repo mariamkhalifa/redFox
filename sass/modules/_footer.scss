@@ -1,0 +1,31 @@
+#scrollTop {
+	opacity: 0;
+	cursor: pointer;
+	position: fixed;
+	bottom: 60px;
+	right: 20px;
+	padding: 10px;
+	transition: all .5s ease;
+}
+
+#scrollTop:hover, #scrollTop:focus {
+	@include scaleDown;
+	opacity: .9;
+}
+
+#scrollTop i {
+	color: $copy-color;
+	text-shadow: 1px 4px 5px rgba(0,0,0,.3);
+}
+
+#mainFooter {
+	background-color: $copy-color;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+#mainFooter p {
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+}

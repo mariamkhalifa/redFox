@@ -1,0 +1,40 @@
+$orange: #e65b25;
+$bg-color: #CED8E8;
+$light-grey: #5b5a5a;
+$copy-color: #4d4b4b;
+
+$copy-font: 'Roboto Condensed', sans-serif;
+$heading-font: 'Roboto Slab', serif;
+
+$h1: 2em;
+$h2: 1.5em;
+$h3: 1.2em;
+$p-regular: 1em;
+$p-small: .9em;
+$p-xsmall: .8em;
+
+
+@mixin rotate90 {
+    -webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+@mixin rotate180 {
+    -webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+@mixin scaleDown {
+    -webkit-transform: scale(0.96);
+	-ms-transform: scale(0.96);
+	transform: scale(0.96);
+}
+
+@mixin slideDown {
+	-webkit-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
