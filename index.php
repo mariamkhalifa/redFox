@@ -51,7 +51,7 @@
 					<img src="images/sticky-mat.jpg" alt="Clean Room Sticky Mat" class="productImg">
 					<div class="productText">
 						<h3 class="productTitle">Clean Room Sticky Mat</h3>
-						<p class="productDesc">A multilayered adhesive mat that captures dust and undesired particles off shoes and wheeled equipment before entering the controlled environment. Offered in a standard 30 layered mat, each layer is easily peeled off revealing a new clean polyethylene film ready for traffic.  Manufactured at one of the best factories in China, offering great quality satisfying Canadian standards at a substantially lower cost.</p>
+						<p class="productDesc">A multilayered adhesive mat that captures dust and undesired particles off shoes and wheeled equipment before entering the controlled environment. Offered in a standard 30 layered mat, each layer is easily peeled off revealing a new clean polyethylene film ready for traffic.  Manufactured at one of the best factories in China, offering great quality satisfying Canadian standards at a substantially lower cost. <br>Price: $15</p>
 					</div>
 				</section>
 
@@ -182,14 +182,19 @@
 			<p id="contactText">We are always available to answer all your inquiries. Feel free to use this form or email us.</p>
 			<form id="contactForm" action="contact/data_contact.php" method="POST">
 				<p class="formMsg"></p>
+
 				<label for="u-name">Name</label>
 				<input id="u-name" type="text" name="name" placeholder="name.." required>
+				
 				<label for="u-email">Email</label>
 				<input id="u-email" type="email" name="email" placeholder="email.." required>
+				
 				<label for="u-subject">Subject</label>
 				<input id="u-subject" type="text" name="subject" placeholder="subject.." required>
+				
 				<label for="u-message">Message</label>
 				<textarea id="u-message" name="message" placeholder="message.." required></textarea>
+				
 				<input id="submit" type="submit" value="Submit">
 			</form>
 			<ul>
