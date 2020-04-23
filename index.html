@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Red Fox Medical</title>
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+</head>
+
+<body>
+	<h1 class="hidden">Red Fox</h1>
+	<main id="app">
+		<header id="mainHeader">
+			<nav id="mainNav">
+				<h2 class="hidden">Main Naviagation</h2>
+				<i @click="toggleMenu" class="fa fa-bars hamburger fa-2x" :class="{ 'expanded' : burger }"></i>
+				<ul id="burgerMenu" :class="{ 'slideToggle' : burger }">
+					<li><a href="#products" id="productsLink">Products</a></li>
+					<li><a href="#contact" id="contactLink">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div id="logo">
+				<img id="redFoxLogo" src="images/logo.svg" alt="Logo">
+			</div>
+		</header>
+
+		<router-view></router-view>
+
+		<div @click="scrollTop" id="scrollTop">
+			<i class="fa fa-angle-up fa-3x upArrow"></i>
+		</div>
+
+		<footer id="mainFooter">
+			<p>© Red Fox Medical 2020. All Rights Reserved.</p>
+		</footer>
+		
+	</main>
+	
+	<script src="js/main.js" type="module"></script>
+</body>
+</html>
