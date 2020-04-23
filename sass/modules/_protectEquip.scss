@@ -1,0 +1,22 @@
+.protectEquipCon {
+    background-color: $bg-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 50px;
+}
+
+.protectEquip {
+    display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: start;
+    background-color: $bg-color;
+	margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+	.protectEquip {
+		grid-template-columns: repeat(3,1fr);
+	}
+}
