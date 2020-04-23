@@ -19,10 +19,10 @@ const vm = new Vue({
     router
 }).$mount('#app')
 
-let waypoint = new Waypoint({
-    element: document.getElementById('products'),
-    handler: function(direction) {
-      console.log('Scrolled to waypoint!')
-      scrollTop.style.opacity = "1";
-    }
-  })
+// let waypoint = new Waypoint({
+//     element: document.getElementById('products'),
+//     handler: function(direction) {
+//       console.log('Scrolled to waypoint!')
+//       scrollTop.style.opacity = "1";
+//     }
+//   })

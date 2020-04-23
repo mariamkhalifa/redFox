@@ -1,21 +1,24 @@
 #scrollTop {
-	opacity: 0;
-	cursor: pointer;
-	position: fixed;
-	bottom: 60px;
-	right: 20px;
+	// opacity: 0;
+	
+	// position: absolute;
+	// bottom: 60px;
+	// right: 20px;
+	display: flex;
+	justify-content: flex-end;
 	padding: 10px;
-	transition: all .5s ease;
+	
 }
-
-#scrollTop:hover, #scrollTop:focus {
-	@include scaleDown;
-	opacity: .9;
-}
-
 #scrollTop i {
 	color: $copy-color;
+	cursor: pointer;
+	transition: all .5s ease;
 	text-shadow: 1px 4px 5px rgba(0,0,0,.3);
+}
+
+#scrollTop i:hover, #scrollTop i:focus {
+	@include scaleDown;
+	opacity: .9;
 }
 
 #mainFooter {
