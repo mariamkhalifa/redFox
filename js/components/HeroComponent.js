@@ -8,7 +8,7 @@ export default {
 
     data() {
         return {
-            msg: 'Your Satisfaction is Our Success'
+            msg: 'Your Satisfaction is Our Mission'
         }
     },
 

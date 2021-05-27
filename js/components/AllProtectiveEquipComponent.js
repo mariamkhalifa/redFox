@@ -21,7 +21,7 @@ export default {
             title: 'Human Protective Equipment', 
             img: 'surgical-cap.jpg',
             protectquip: [
-                { name: 'Surgical Mask 3-Ply', img: '3ply-surgical-mask2.jpg', spec1: 'Level 2 - Price: $35/box <span>(50 pcs)</span>', spec2: 'Level 3 - Price: $40/box <span>(50 pcs)</span>'},
+                { name: 'Surgical Mask 3-Ply', img: '3ply-surgical-mask2.jpg', spec1: 'Level 2 - $35/box <span>(50 pcs)</span>', spec2: 'Level 3 - $40/box <span>(50 pcs)</span>'},
                 { name: 'Surgical Cap with Easy Tie', img: 'surgical-cap-easy-tie2.jpg', spec1: 'Price: $0.10', spec2: ''},
                 { name: 'Surgical Cap with Elastic Band', img: 'surgical-cap-elastic2.jpg', spec1: 'Price: $0.10', spec2: ''},
                 { name: 'Mesh Hairnet', img: 'mesh-hairnet2.jpg', spec1: 'Price: $0.11', spec2: ''},

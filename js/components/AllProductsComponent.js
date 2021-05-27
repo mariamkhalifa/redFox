@@ -5,13 +5,13 @@ export default {
     template: `
         <section id="products">
 			<h2 class="mainHeading">{{ heading }}</h2>
-			<p class="productsIntro">{{ intromsg }}</p>
+			<!-- <p class="productsIntro">{{ intromsg }}</p> -->
             
             <div id="productsCon">
 				<product v-for="(product, index) in products" :img="product.img" :name="product.name" 
 				:desc1="product.desc1" :desc2="product.desc2" :key="index"/>
 
-				<allprotective/>
+				<!-- <allprotective/> -->
 
 			</div>
 		</section>

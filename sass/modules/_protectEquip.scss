@@ -3,20 +3,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
-    padding: 50px;
+    margin-top: 100px;
+    padding: 120px 0;
+    width: 100vw;
 }
 
 .protectEquip {
     display: grid;
 	grid-template-columns: repeat(2,1fr);
-	align-items: start;
+    align-items: start;
+    grid-column-gap: 10vw;
     background-color: $bg-color;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
 	.protectEquip {
-		grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 15vw;
 	}
 }
