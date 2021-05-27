@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Red Fox Medical</title>
+	<title>Red Fox</title>
 
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
 				<h2 class="hidden">Main Naviagation</h2>
 				<i @click="toggleMenu" class="fa fa-bars hamburger fa-2x" :class="{ 'expanded' : burger }"></i>
 				<ul id="burgerMenu" :class="{ 'slideToggle' : burger }">
-					<li><a href="#products" id="productsLink">Products</a></li>
-					<li><a href="#contact" id="contactLink">Contact</a></li>
+					<li @click="scrollToProducts"><a href="#" id="productsLink">Products</a></li>
+					<li @click="scrollToContact"><a href="#" id="contactLink">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -37,8 +37,8 @@
 
 		<router-view></router-view>
 
-		<div @click="scrollTop" id="scrollTop">
-			<i class="fa fa-angle-up fa-3x upArrow"></i>
+		<div id="scrollTop">
+			<i @click="scrollTop" class="fa fa-angle-up fa-3x upArrow"></i>
 		</div>
 
 		<footer id="mainFooter">

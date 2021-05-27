@@ -7,6 +7,8 @@ $subject = '';
 $message = '';
 $recipient = 'info@redfoxmedical.ca';
 
+//var_dump($_POST);
+
 if (isset($_POST['name'])) {
 	$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 }
@@ -25,7 +27,7 @@ if (isset($_POST['message'])) {
 }
 
 $headers = array(
-	'From'=>'noreply@redfoxmedical.ca',
+	'From'=>'no-reply@redfoxmedical.ca',
 	'Reply-To'=>$name.'<'.$email.'>'
 );
 

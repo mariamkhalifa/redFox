@@ -9,10 +9,10 @@
 .introMsg {
 	color: white;
 	text-align: center;
-    margin-top: 160px;
+    margin-top: 60px;
 	max-width: 300px;
-    text-shadow: 3px 2px 5px rgba(0,0,0,.3);
-    font-size: $h1;
+    text-shadow: 4px 3px 5px rgba(0,0,0,.5);
+    font-size: 3em;
     font-family: $heading-font;
 }
 
@@ -39,7 +39,8 @@
 
 	.introMsg {
 		animation-delay: 1s;
-		margin-top: 200px;
+		margin-top: 150px;
+		font-size: 3.5em;
 	}
 
 	.downArrow {

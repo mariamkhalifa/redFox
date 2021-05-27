@@ -11,7 +11,7 @@ export default {
         return {
             heading: 'Who We Are',
             img: 'logo-symbol.svg',
-            text: 'Red Fox Medical is dedicated to providing the best medical equipment for hospitals, clinics, and senior care homes. We guarantee our clients’ satisfaction by importing only the highest quality equipment and offering the lowest cost. Our passionate team strives to provide the best service for our clients through timely delivery and professional assistance. We are located in London, Ontario.'
+            text: 'We are a local Canadian business, located in London, Ontario. Red Fox is dedicated to providing the best equipment for your business. We guarantee our clients’ satisfaction by providing only the highest quality equipment and offering the lowest cost. Our passionate team strives to provide the best service for our clients through timely delivery and professional assistance.'
         }
     }
 }
