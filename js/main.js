@@ -30,13 +30,13 @@ const vm = new Vue({
                 mediaQuery2 = window.matchMedia('(min-width: 767px)');
                 
             if (mediaQuery1.matches) {
-                TweenLite.to(window, 1, {scrollTo:{y:1800}});
+                TweenLite.to(window, 1, {scrollTo:{y:2250}});
             }
             else if (mediaQuery2.matches) {
-                TweenLite.to(window, 1, {scrollTo:{y:2450}});
+                TweenLite.to(window, 1, {scrollTo:{y:2900}});
             }
             else {
-                TweenLite.to(window, 1, {scrollTo:{y:2300}});
+                TweenLite.to(window, 1, {scrollTo:{y:2900}});
             }
         },
 

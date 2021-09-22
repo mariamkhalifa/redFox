@@ -1,7 +1,8 @@
 import HeroComponent from './HeroComponent.js'
 import AboutComponent from './AboutComponent.js'
 import AllProductsComponent from './AllProductsComponent.js'
-import contactComponent from './ContactComponent.js'
+import CustomersComponent from './CustomersComponent.js'
+import ContactComponent from './ContactComponent.js'
 
 export default {
     name: 'home',
@@ -16,6 +17,8 @@ export default {
 
             <allproducts/>
 
+            <customers/>
+
             <contact/>
 
         </section>
@@ -25,6 +28,7 @@ export default {
         hero: HeroComponent,
         about: AboutComponent,
         allproducts: AllProductsComponent,
-        contact: contactComponent
+        customers: CustomersComponent,
+        Contact: ContactComponent
     }
 }
