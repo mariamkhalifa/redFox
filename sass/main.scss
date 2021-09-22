@@ -1,3 +1,5 @@
+//sass --watch sass:css
+
 @import '_vars';
 @import 'modules/_reset';
 
@@ -35,5 +37,6 @@ a {
 @import 'modules/_products';
 @import 'modules/_protectEquip';
 @import 'modules/_about';
+@import 'modules/_customers';
 @import 'modules/_contact';
 @import 'modules/_footer';
